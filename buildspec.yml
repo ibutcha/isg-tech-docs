@@ -1,0 +1,13 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 10
+    commands:
+      - npm install -g vuepress
+  build:
+    commands:
+      - npm run docs:build
+      - aws s3 rm s3://sdc-docs --recursive
+      - aws s3 sync .vuepress/dist/ s3://sdc-docs/
