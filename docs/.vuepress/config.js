@@ -1,16 +1,15 @@
 module.exports = {
     title: 'SDC Technical Documentation',
-    description: '',
     themeConfig: {
         nav: [
             {
                 text: 'Databases',
                 ariaLabel: 'Databases menu',
-                link: '/'
+                link: '/database/'
             },
             {
                 text: 'Web Servers',
-                link: '/'
+                link: '/web-server/'
             }
         ]
     }
