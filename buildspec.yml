@@ -8,6 +8,6 @@ phases:
       - npm install -g vuepress
   build:
     commands:
-      - npm run docs:build
+      - vuepress build docs
       - aws s3 rm s3://sdc-docs --recursive
       - aws s3 sync docs/.vuepress/dist/ s3://sdc-docs/
