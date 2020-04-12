@@ -2,6 +2,7 @@ module.exports = {
     base: '/docs/',
     title: 'SDC Technical Documentation',
     themeConfig: {
+        smoothScroll: true,
         lastUpdated: "Last Updated",
 
         nav: [{
@@ -15,26 +16,17 @@ module.exports = {
             link: '/web-server/'
         }],
 
-        sidebar: [
-            {
-                title: "Database",
-                path: "/database/",
-                collapsable: false,
-                sidebarDepth: 1,
-                children: [
-                    "/database/MongoDB"
-                ]
-            },
-            {
-                title: "Web Servers",
-                path: "/web-server/",
-                collapsable: false,
-                sidebarDepth: 1,
-                children: [
-                    "/web-server/tomcat"
-                ]
-            }
-        ]
+
+        sidebar: {
+            "/database/": [
+                "",
+                "MongoDB"
+            ],
+            "/web-server/": [
+                "",
+                "tomcat"
+            ]
+        }
     },
 
 
