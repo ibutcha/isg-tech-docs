@@ -1,13 +1,26 @@
 # Apache Tomcat
 
-*Short introduction*
+*Short tagline*
 
 [[toc]]
 
 
-## Description
- Short discription
+## General Information
+
+### Introduction
  
  
-## Use Cases
- some use cases
+### Features
+   feature list
+     
+### Comparisons
+   comparisons
+        
+### Use Cases
+   use cases
+
+## Summary   
+
+
+
+ 
