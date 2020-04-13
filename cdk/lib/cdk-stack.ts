@@ -1,4 +1,5 @@
 import * as cdk from '@aws-cdk/core';
+import {RemovalPolicy} from '@aws-cdk/core';
 import * as s3 from '@aws-cdk/aws-s3';
 
 export class CdkStack extends cdk.Stack {
@@ -9,6 +10,7 @@ export class CdkStack extends cdk.Stack {
     new s3.Bucket(this, 'sdc-docs-v2', {
       bucketName: 'sdc-docs-v2',
       versioned: false,
+      removalPolicy: RemovalPolicy.DESTROY,
       publicReadAccess: true,
       websiteIndexDocument: 'index.html',
       websiteErrorDocument: 'index.html'
