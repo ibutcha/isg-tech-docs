@@ -1,5 +1,4 @@
 module.exports = {
-    base: '/docs/',
     title: 'SDC Technical Documentation',
     themeConfig: {
         smoothScroll: true,
