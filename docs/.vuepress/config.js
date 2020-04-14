@@ -28,7 +28,13 @@ module.exports = {
         }
     },
 
-
+    configureWebpack: {
+        resolve: {
+            alias: {
+                '@imagePath': 'images/'
+            }
+        }
+    },
     plugins: [
         [
             'vuepress-plugin-clean-urls',
