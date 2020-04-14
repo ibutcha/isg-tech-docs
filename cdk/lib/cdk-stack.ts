@@ -7,10 +7,10 @@ export class CdkStack extends cdk.Stack {
     super(scope, id, props);
 
     // The code that defines your stack goes here
-    new s3.Bucket(this, 'sdc-docs-v2', {
-      bucketName: 'sdc-docs-v2',
+    new s3.Bucket(this, 'sdc-docs', {
+      bucketName: 'sdc-docs',
       versioned: false,
-      removalPolicy: RemovalPolicy.DESTROY,
+      removalPolicy: RemovalPolicy.RETAIN,
       publicReadAccess: true,
       websiteIndexDocument: 'index.html',
       websiteErrorDocument: 'index.html'
