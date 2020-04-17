@@ -20,15 +20,21 @@ Commonly Used NoSQL Databases.
 	* Apache Cassandra
 	* Redis
 
-**When to use Relational or NoSQL Database?** 
+**When to use Relational Database?** 
 
- * Use Relational Database when
- * Use NoSQL Database when
+ * If ACID will be enforced
+ * Database Structure will not be changed
 
+**When to use NoSQL Database?**
 
+ * if you are having a RAPID Development Application
+ * you will store large amount of data.
+
+ 
+ 
 
 ## Choosing the Right Database
-
+In order to pick or choose the right database for an enterprise technology. We need to consider some uses cases on how the application 
 ### CAP Theorem
 The theorem states that in any given pair of request , a distributed system only guarantees two out of three attributes.
 
@@ -52,24 +58,22 @@ The theorem states that in any given pair of request , a distributed system only
 
 * guarantees that in a distributed system, the system will continue to function in the face of network partitions.
 
-  
-
 As stated above about CAP Theorem, it can also categorized systems into three categories:
 
-1.  #### Consistency and Availability (CA)
+1.  **Consistency and Availability (CA)**
 
 * It refers to a systems that uses relational traditional technologies
 
-2.  #### Consistency and Partition Tolerance (CP)
+2.  **Consistency and Partition Tolerance (CP)**
 
-* It refers to a system that forfeits availability in the occurrence of nertwork partition or failuure
+* It refers to a system that forfeits availability in the occurrence of network partition or failure
 
-3.  #### Availability and Partition Tolerance (AP)
+3.  **Availability and Partition Tolerance (AP)**
 
-* it refers to a system that guarantees availability and partitiion tolerance but not consistency.
+* it refers to a system that guarantees availability and partition tolerance but not consistency.
 
 
-In general, CAP Theorem dictates that in case or occurence of network partitions, we must choose between Consistency and Availability.
+In general, CAP Theorem dictates that in case or occurrence of network partitions, we must choose between Consistency and Availability.
 
  
 
