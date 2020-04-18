@@ -6,6 +6,6 @@
 [[toc]]
 
 ## Description
-    description
+    description.
 ## Use Cases
     use cases
