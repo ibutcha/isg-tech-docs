@@ -14,11 +14,12 @@ Commonly Used Relational Databases
 	* MySQL
 	* PostgreSQL
 	* Oracle
- * **NoSQL Databases** have dynamic schemas for unstructured data, and data is stored in many ways: They can be column-oriented, document-oriented, graph-based or organized as a KeyValue store.
-Commonly Used NoSQL Databases.
-	* MongoDB
-	* Apache Cassandra
-	* Redis
+	
+ * **NoSQL Databases** a.k.a "not only SQL" are non tabular, and store data differently than relational tables. NoSQL databases come in a variety of data model types such as: 
+	* Key-Value Store
+	* Document Store
+	* Wide-Column Store
+	* Graph databases
 
 **When to use Relational Database?** 
 
