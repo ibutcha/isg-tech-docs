@@ -19,7 +19,8 @@ module.exports = {
         sidebar: {
             "/database/": [
                 "",
-                "MongoDB"
+                "MongoDB",
+                "PostgreSQL"
             ],
             "/web-server/": [
                 "",
