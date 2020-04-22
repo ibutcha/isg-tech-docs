@@ -15,7 +15,7 @@ Commonly Used Relational Databases
 	* PostgreSQL
 	* Oracle
 	
- * **NoSQL Databases** a.k.a "not only SQL" are non tabular, and store data differently than relational tables. NoSQL databases come in a variety of data model types such as: 
+ * **NoSQL Databases** a.k.a "not only SQL" are non-tabular, meaning not meant in presenting data in the form of rows-column, moreover, the way it will store data is different than relational databases. NoSQL databases come in a variety of data model types such as: 
 	* Key-Value Store
 	* Document Store
 	* Wide-Column Store
