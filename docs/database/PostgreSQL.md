@@ -1,12 +1,33 @@
-# PostgreSQL
-PostgreSQL, often simply "Postgres", is an object-relational database management system (ORDBMS) with an emphasis on extensibility and standards-compliance. 
 
+![Alt Text](../.vuepress/public/postgresql-logo.png)
+
+
+## Introduction
+PostgreSQL, often simply "Postgres", is an object-relational database management system (ORDBMS) with an emphasis on extensibility and standards-compliance.
+ PostgreSQL is ACID-compliant, transactional, has updatable and materialized views, triggers, and foreign keys. It also supports functions and stored procedures.
+## Why use PostgreSQL?
+PostgreSQL comes with many features aimed to help developers build application and protect data for database administrators, besides from being free and open source PostgreSQL is highly extensibile that you can define your own data type and build your own custom functions.
+## Features
+
+- Data Types
+ - Data Integrity  
+ - Concurrency and Performance
+ - Reliability and Disaster Recovery
+ - Security
+ - Extensible
+ - Internationalization and Text Search
+
+## Use Cases
+ - PostgreSQL can be used for an Online Transaction Processing and Analytics.
+ - PostgreSQL can be used to processed geometric data in various formats using **PostGIS**.
+ - PostgreSQL can be used as no-sql data store.
+ - PostgreSQL can be used as a database consolidation.
 ## Basic Installation and Setup
 ###  Manual Installation 
 To do
 
 ### Using Docker
-To streamline your efforts in deploying your  PostreSQL in development and test environment, or even in your local machine,we can leverage the use of container.  
+To streamline your efforts in deploying your  PostgreSQL in development and test environment, or even in your local machine,we can leverage the use of container.  
 
 
 **Start a Postgres Instance**
@@ -72,7 +93,9 @@ VOLUME  ["/etc/postgresql", "/var/log/postgresql", "/var/lib/postgresql"]
 CMD ["/usr/lib/postgresql/9.3/bin/postgres", "-D", "/var/lib/postgresql/9.3/main", "-c", "config_file=/etc/postgresql/9.3/main/postgresql.conf"]
 ```
 ### Using Managed Database Service
-Using a managed database services can help to reduce the process of provisioning and maintaining the database. Unllike in a traditional way of setting up database ,the user's doesn't need to maintain and manage the database; it's the cloud provider's responsibility to oversee the underlying infrastructure. In this setup, the developer has more focused on the application rather than configuring the database. Here are the top 3 cloud providers that offers **PostgreSQL** as a **Managed Database Service**
+Using a managed database services can help to reduce the process of provisioning and maintaining the database. Unllike in a traditional way of setting up database ,the developer doesn't need to maintain and manage the database; it's the cloud provider's responsibility to oversee the underlying infrastructure. In this setup, the developer has more focused on the application rather than configuring the database. 
+
+Here are the top 3 cloud providers that offers **PostgreSQL** as a **Managed Database Service**
 * Amazon Relational Database Service
 	[https://aws.amazon.com/getting-started/tutorials/create-connect-postgresql-db/](https://aws.amazon.com/getting-started/tutorials/create-connect-postgresql-db/)
 * Google Cloud SQL
@@ -80,31 +103,20 @@ Using a managed database services can help to reduce the process of provisioning
 * Microsoft Azure Database
 	[https://docs.microsoft.com/en-us/azure/postgresql/](https://docs.microsoft.com/en-us/azure/postgresql/)
   
-## Features
 
-###  Strengths
-
- -  Immunity to over-deployment. 
- - ACID Compliant  
- -  Diversified Extension Functions. 
- -  Diverse indexing technique. 
- - Diverse kinds of replication.  
- -  Write-ahead logging. 
- - Supports Geographic objects.
-
-### Limitations / Weaknesses
-
- - Slower read operations compare to MySQL
- - Usability and Learning Curve
-
-### Versus Other Products
-
+## Support for Chosen Frameworks
+to do
  - List item
+## Limitations
+ - Slower performance compared to other database
+ - Complex Replication
 
-### Support for Chosen Frameworks
+## Versus Other Products
+**PostgreSQL vs. MongoDB**
 
- - List item
 
+
+**PostgreSQL vs. MySQL**
 ## Performance Tuning Recommendations
 
 to do
@@ -120,3 +132,5 @@ to do
 [https://www.tutorialandexample.com/postgresql-tutorial/](https://www.tutorialandexample.com/postgresql-tutorial/)
 [https://github.com/docker-library/docs/blob/master/postgres/README.md](https://github.com/docker-library/docs/blob/master/postgres/README.md)
 [https://www.digitalocean.com/community/tutorials/understanding-managed-databases](https://www.digitalocean.com/community/tutorials/understanding-managed-databases)
+[https://www.cybertec-postgresql.com/en/postgresql-overview/solutions-who-uses-postgresql/](https://www.cybertec-postgresql.com/en/postgresql-overview/solutions-who-uses-postgresql/)
+[https://medium.com/we-build-state-of-the-art-software-creating/why-should-i-use-postgresql-as-database-in-my-startup-company-96de2fd375a9](https://medium.com/we-build-state-of-the-art-software-creating/why-should-i-use-postgresql-as-database-in-my-startup-company-96de2fd375a9)
