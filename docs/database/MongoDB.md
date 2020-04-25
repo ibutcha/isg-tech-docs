@@ -1,4 +1,4 @@
-# ![Alt Text](../.vuepress/public/mongodb.jpeg)
+# MongoDB
 
 *Short introduction*
 
