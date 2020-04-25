@@ -17,14 +17,24 @@ module.exports = {
 
 
         sidebar: {
-            "/database/": [
-                "",
-                "MongoDB",
-                "PostgreSQL"
-            ],
-            "/web-server/": [
-                "",
-                "tomcat"
+            "/database/": [{
+                title: "Databases",
+                collapsable: true,
+                children: [
+                    "/database/",
+                    "/database/MongoDB",
+                    "/database/PostgreSQL"
+                ]
+            }],
+            "/web-server/": [{
+                title: "Web Server",
+                collapsable: true,
+                children: [
+                    "/web-server/tomcat"
+                ]
+            }],
+            "/": [
+                ""
             ]
         }
     },

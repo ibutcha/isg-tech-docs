@@ -1,4 +1,4 @@
-# MongoDB
+ ![MongoDB](../.vuepress/public/mongodb.jpeg "MongoDB")
 
 *Short introduction*
 
