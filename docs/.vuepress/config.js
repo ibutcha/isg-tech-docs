@@ -13,6 +13,9 @@ module.exports = {
         }, {
             text: 'Web Servers',
             link: '/web-server/'
+        },  {
+            text: 'In Memory Database',
+            link: '/in-memory-database/'
         }],
 
 
@@ -33,9 +36,19 @@ module.exports = {
                     "/web-server/tomcat"
                 ]
             }],
+            "/in-memory-database": [{
+                title: "In Memory Database",
+                collapsable: true,
+                children:[
+                    "/in-memory-database/",
+                    "/in-memory-database/Redis",
+                    "/in-memory-database/Memcached",
+                    "/in-memory-database/RedisVsMemcached"
+                ]
+            }],
             "/": [
                 ""
-            ]
+            ],
         }
     },
 
