@@ -1,8 +1,8 @@
 # Redis
+![Alt Text](../.vuepress/public/redis_logo.png)
 
-[[toc]]
 ## Introduction 
-An in-memory data structure store supporting many data types like strings, hashes, sets, sorted sets, etc. Essentially, it is a key-value store.
+The name Redis stands for REmote DIctionary Server since it refers to the data structure server.  Redis basically is known as a data structure server. An in-memory data structure store supporting many data types like strings, hashes, sets, sorted sets, etc. Essentially, it is a key-value store.
 
 ## Features
 * Support data structure such as: 
@@ -32,13 +32,18 @@ An in-memory data structure store supporting many data types like strings, hashe
 * Limited Multi-Key Operation Support
 
 ## Clustering 
-
+WIP
 
 ## Basic Set-up
-*  Stand Alone 
-    * https://redis.io/topics/quickstart
-	* http://try.redis.io/
-
+* Stand Alone
+   * https://redis.io/topics/quickstart
+* Try Redis online
+  * http://try.redis.io/
 * Clustering setup 
 
 ## Use Cases
+* If you need persistence, simple replication and want to use list/set/hash data structures in the database, then Redis is a good choice.
+
+## References
+- [Redis vs Memcached- Review, Features and Comparison](https://pepipost.com/blog/redis-vs-memcached-review-features-and-comparison/)
+- [Redis Introduction](https://redis.io/topics/introduction)
