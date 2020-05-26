@@ -1,5 +1,5 @@
 # MongoDB
-
+![Alt Text](../.vuepress/public/mongo-db-icon.png)
 *Short introduction*
 
 
