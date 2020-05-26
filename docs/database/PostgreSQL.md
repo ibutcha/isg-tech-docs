@@ -43,21 +43,6 @@ PostgreSQL comes with many features aimed to help developers build application a
 - PostgreSQL can be used as a database consolidation.
 
 
-  
-
-Here are the top 3 cloud providers that offers **PostgreSQL** as a **Managed Database Service**
-
-* Amazon Relational Database Service
-
-[https://aws.amazon.com/getting-started/tutorials/create-connect-postgresql-db/](https://aws.amazon.com/getting-started/tutorials/create-connect-postgresql-db/)
-
-* Google Cloud SQL
-
-[https://cloud.google.com/sql/docs/postgres](https://cloud.google.com/sql/docs/postgres)
-
-* Microsoft Azure Database
-
-[https://docs.microsoft.com/en-us/azure/postgresql/](https://docs.microsoft.com/en-us/azure/postgresql/)
 
 
 ## Limitations
@@ -102,6 +87,20 @@ $ docker run -it --rm --network some-network postgres psql -h some-postgres -U p
 ### Using Managed Database Service
 
 Using a managed database services can help to reduce the process of provisioning and maintaining the database. Unlike in a traditional way of setting up database ,the developer doesn't need to maintain and manage the database; it's the cloud provider's responsibility to oversee the underlying infrastructure. In this setup, the developer has more focused on the application rather than configuring the database.
+
+Here are the top 3 cloud providers that offers **PostgreSQL** as a **Managed Database Service**
+
+* Amazon Relational Database Service
+
+[https://aws.amazon.com/getting-started/tutorials/create-connect-postgresql-db/](https://aws.amazon.com/getting-started/tutorials/create-connect-postgresql-db/)
+
+* Google Cloud SQL
+
+[https://cloud.google.com/sql/docs/postgres](https://cloud.google.com/sql/docs/postgres)
+
+* Microsoft Azure Database
+
+[https://docs.microsoft.com/en-us/azure/postgresql/](https://docs.microsoft.com/en-us/azure/postgresql/)
 
 
 ## Cluster Configuration
