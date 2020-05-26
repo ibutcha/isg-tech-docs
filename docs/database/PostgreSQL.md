@@ -32,7 +32,6 @@ PostgreSQL comes with many features aimed to help developers build application a
 - Internationalization and Text Search
 
   
-
 ## Use Cases
 
 - PostgreSQL can be used for an Online Transaction Processing and Analytics.
@@ -42,6 +41,32 @@ PostgreSQL comes with many features aimed to help developers build application a
 - PostgreSQL can be used as no-sql data store.
 
 - PostgreSQL can be used as a database consolidation.
+
+
+  
+
+Here are the top 3 cloud providers that offers **PostgreSQL** as a **Managed Database Service**
+
+* Amazon Relational Database Service
+
+[https://aws.amazon.com/getting-started/tutorials/create-connect-postgresql-db/](https://aws.amazon.com/getting-started/tutorials/create-connect-postgresql-db/)
+
+* Google Cloud SQL
+
+[https://cloud.google.com/sql/docs/postgres](https://cloud.google.com/sql/docs/postgres)
+
+* Microsoft Azure Database
+
+[https://docs.microsoft.com/en-us/azure/postgresql/](https://docs.microsoft.com/en-us/azure/postgresql/)
+
+
+## Limitations
+
+- Slower performance compared to other database
+- Complex Replication process
+## Versus Other Products
+to do
+
 
 ## Basic Installation and Setup
 
@@ -78,28 +103,6 @@ $ docker run -it --rm --network some-network postgres psql -h some-postgres -U p
 
 Using a managed database services can help to reduce the process of provisioning and maintaining the database. Unlike in a traditional way of setting up database ,the developer doesn't need to maintain and manage the database; it's the cloud provider's responsibility to oversee the underlying infrastructure. In this setup, the developer has more focused on the application rather than configuring the database.
 
-  
-
-Here are the top 3 cloud providers that offers **PostgreSQL** as a **Managed Database Service**
-
-* Amazon Relational Database Service
-
-[https://aws.amazon.com/getting-started/tutorials/create-connect-postgresql-db/](https://aws.amazon.com/getting-started/tutorials/create-connect-postgresql-db/)
-
-* Google Cloud SQL
-
-[https://cloud.google.com/sql/docs/postgres](https://cloud.google.com/sql/docs/postgres)
-
-* Microsoft Azure Database
-
-[https://docs.microsoft.com/en-us/azure/postgresql/](https://docs.microsoft.com/en-us/azure/postgresql/)
-
-
-## Limitations
-
-- Slower performance compared to other database
-- Complex Replication process
-
 
 ## Cluster Configuration
 
@@ -129,9 +132,6 @@ Synchronous replication - offers the ability to confirm that all changes made by
 
 
 
-
-  ## Versus Other Products
-to do
   
 ## Performance Tuning Recommendations
 Performance tuning is all about trade offs, we can't optimize everything in our database, sometimes we might accept a slow-running query in one part of your application that isn’t used so often in order to get a lightning-fast response time on a frequently performed query.
