@@ -1,5 +1,5 @@
-  
-# PostgreSQL
+# PostgreSQL  
+
 ![Alt Text](../.vuepress/public/postgresql-logo.png)
 
   
@@ -109,18 +109,23 @@ Some commercial or community solutions are synchronous, meaning that a data-modi
 
 Before we deep dive into different clustering solutions, first we need to understand some basic concepts:
 
-**Master Server -** A server that can modify/write data. 
-**Standby Server** - A server that tracks the changes in the master are call
-**Warm Standby Servers** - A Server that cannot be connected unless its promoted to master
-**Hot standby servers** - A server that accepts connections and serves only as read-only queries.
+ - **Master Server -** A server that can modify/write data. 
+   
+ - **Standby Server** - A server that tracks the changes in the master.
+ - **Warm Standby Servers** - A Server that cannot be connected unless its promoted to
 
-Here are some clustering  techniques that are available in PostgreSQL.
+master.
 
-Streaming replication - Streaming replication allows a standby server to stay more up-to-date than is possible with file-based log shipping. The standby connects to the primary, which streams WAL records to the standby as they're generated, without waiting for the WAL file to be filled.
+ - **Hot standby servers** - A server that accepts connections and serves only as read-only queries.
+ - **WAL or Write Ahead Log** - a log file where all the modifications to the database are written before they’re applied/written to data files.
 
-Cascading replication - The cascading replication feature allows a standby server to accept replication connections and stream WAL records to other standbys, acting as a relay. This can be used to reduce the number of direct connections to the master and also to minimize inter-site bandwidth overheads.
+Here are some clustering  techniques that are built-in features of PostgreSQL.
 
-Synchronous replication - Synchronous replication offers the ability to confirm that all changes made by a transaction have been transferred to one or more synchronous standby servers. This extends that standard level of durability offered by a transaction commit. This level of protection is referred to as 2-safe replication in computer science theory, and group-1-safe (group-safe and 1-safe) when `synchronous_commit` is set to `remote_write`.
+Streaming replication - allows a standby server to stay more up-to-date than is possible with file-based log shipping. The standby connects to the primary, which streams WAL records to the standby as they're generated, without waiting for the WAL file to be filled.
+
+Cascading replication -  allows a standby server to accept replication connections and stream WAL records to other standbys, acting as a relay. This can be used to reduce the number of direct connections to the master and also to minimize inter-site bandwidth overheads.
+
+Synchronous replication - offers the ability to confirm that all changes made by a transaction have been transferred to one or more synchronous standby servers. This extends that standard level of durability offered by a transaction commit. This level of protection is referred to as 2-safe replication in computer science theory, and group-1-safe (group-safe and 1-safe) when `synchronous_commit` is set to `remote_write`.
 
 
 
