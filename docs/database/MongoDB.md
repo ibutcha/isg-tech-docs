@@ -10,7 +10,8 @@
    
    The values of fields may include other documents, arrays, and arrays of documents. 
         
-    { 
+``` 
+{ 
         "_id": "5cf0029caff5056591b0ce7d", 
         "fullName": "Charlie Santos",                               
         "position": "Full-Stack Developer",                         
@@ -19,8 +20,8 @@
                 "API Design",
                 "Application Development"
          ]
-    }
-   
+ }
+```
    MongoDB is developed by MongoDB Inc., and is published under a combination of the Server Side Public License and the Apache License.
    
 ## Key Features
@@ -67,7 +68,26 @@ To learn more about atlas, kindly follow this [link](https://docs.atlas.mongodb.
   - [MongoDB Enterprise Edition Set-up](https://docs.mongodb.com/manual/installation/#mongodb-enterprise-edition-installation-tutorials)
   - [Upgrade Community Edition to Enterprise Edition Tutorials](https://docs.mongodb.com/manual/installation/#upgrade-community-edition-to-enterprise-edition-tutorials)
   
-To get started, kindly follow this [link](https://docs.mongodb.com/manual/tutorial/getting-started/)
+Do you want to try it but you don't have cloud account or even local machine to install with? <br/> <br/>Don't worry we got you.
+To get free sandbox, just register to MongoDB Atlas and follow the instruction on this [link](https://docs.atlas.mongodb.com/tutorial/create-atlas-account/)  
+
+Don't know how to start? To get started, kindly follow this [link](https://docs.mongodb.com/manual/tutorial/getting-started/)
+
+## Terminology And Concepts
+
+Many concepts in SQL databases have close analogs in NoSQL Document Database(MongoDB). The table below outlines the common concepts.
+ 
+|      SQL                        |       NoSQL(MongoDB)                        | 
+| :------------------------------ | :------------------------------------------:|
+|  ACID Transactions              | ACID Transactions                           |
+|  Database                       | Database                                    |
+|  Table                          | Collection                                  |
+|  Row                            | Document                                    |
+|  Column                         | Field                                       |
+|  Secondary Index                | Secondary Index                             |
+|  JOINs                          | Embedded documents, $lookup & $graphLookup  |  
+|  GroupBy                        | Aggregation Pipeline                        |
+
 
 ##### References
  - [Supported Platform](https://docs.mongodb.com/manual/installation/#supported-platforms)
