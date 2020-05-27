@@ -9,58 +9,37 @@ PostgreSQL, often simply "Postgres", is an object-relational database management
 
 PostgreSQL is ACID-compliant, transactional, has updatable and materialized views, triggers, and foreign keys. It also supports functions and stored procedures.
 
-## Why use PostgreSQL?
 
-PostgreSQL comes with many features aimed to help developers build application and protect data for database administrators, besides from being free and open source PostgreSQL is highly extensibile that you can define your own data type and build your own custom functions.
+## Advanced Features
 
-## Features
-
-  
-
-- Data Types
-
-- Data Integrity
-
-- Concurrency and Performance
-
-- Reliability and Disaster Recovery
-
-- Security
-
-- Extensible
-
-- Internationalization and Text Search
+-   User-defined types
+-   Table inheritance
+-   Sophisticated locking mechanism
+-   Foreign key referential integrity
+-   Views, rules, subquery
+-   Nested transactions (savepoints)
+-   Multi-version concurrency control (MVCC)
 
   
-## Use Cases
-
-- PostgreSQL can be used for an Online Transaction Processing and Analytics.
-
-- PostgreSQL can be used to processed geometric data in various formats using **PostGIS**.
-
-- PostgreSQL can be used as no-sql data store.
-
-- PostgreSQL can be used as a database consolidation.
-
-
-
 
 ## Limitations
 
-- Slower performance compared to other database
-- Complex Replication process
-## Versus Other Products
-to do
-
+ - Slower performance compared to other database
+ - Lacks integrated mechanisms for automatic failover and recovery between database replicas
+ - Has no native mechanisms to partition (shard) the database across a cluster of nodes
+## Comparison with other Products
+ - **MySQL**
+ 
+	 - PostgreSQL support modern applications feature like JSON, XML etc. while MySQL only supports JSON.
+	 - PostgreSQL is complete ACID compliant while MySQL is only ACID compliant when used with InnoDB and NDB
 
 ## Basic Installation and Setup
 
 ### Manual Installation
 
-To do
-
- ### Database Cluster
- 
+ - [Installation for Linux](https://www.postgresql.org/download/linux/ubuntu/)
+ - [Installation for Windows](https://www.postgresql.org/download/windows/)
+ - [Installation for MacOS](https://www.postgresql.org/download/macosx/)
 
 ### Using Docker
 
@@ -70,17 +49,12 @@ To streamline your efforts in deploying your PostgreSQL in development and test 
   
 
 **Start a Postgres Instance**
-
 ```
-
 $ docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres
-
 ```
 
 **Start via psql**
-
 ```
-
 $ docker run -it --rm --network some-network postgres psql -h some-postgres -U postgres
 
 ```
@@ -132,11 +106,7 @@ please do take note that log shipping is *asynchronous* by default. As a result 
  - **Synchronous replication** - offers the ability to confirm that all
    changes made by a transaction have been transferred to one or more
    synchronous standby servers. This extends that standard level of
-   durability offered by a transaction commit. This level of protection
-   is referred to as 2-safe replication in computer science theory, and
-   group-1-safe (group-safe and 1-safe) when `synchronous_commit` is set
-   to `remote_write`.
-
+   durability offered by a transaction commit.
   
 ## Performance Tuning Recommendations
 Performance tuning is all about trade offs, we can't optimize everything in our database, sometimes we might accept a slow-running query in one part of your application that isn’t used so often in order to get a lightning-fast response time on a frequently performed query.
@@ -162,3 +132,5 @@ Here are the concepts that we need to check to further accelerate the performanc
 [https://www.cybertec-postgresql.com/en/postgresql-overview/solutions-who-uses-postgresql/](https://www.cybertec-postgresql.com/en/postgresql-overview/solutions-who-uses-postgresql/)
 
 [https://medium.com/we-build-state-of-the-art-software-creating/why-should-i-use-postgresql-as-database-in-my-startup-company-96de2fd375a9](https://medium.com/we-build-state-of-the-art-software-creating/why-should-i-use-postgresql-as-database-in-my-startup-company-96de2fd375a9)
+
+[https://www.postgresql.org/docs/current/warm-standby-failover.html](https://www.postgresql.org/docs/current/warm-standby-failover.html)
