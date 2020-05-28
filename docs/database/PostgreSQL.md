@@ -76,6 +76,16 @@ Here are the top 3 cloud providers that offers **PostgreSQL** as a **Managed Dat
 
 [https://docs.microsoft.com/en-us/azure/postgresql/](https://docs.microsoft.com/en-us/azure/postgresql/)
 
+## User Access Management
+
+With PostgreSQL,you can create users and roles with granular permissions. The new user or role must be selectively granted the required permission for each database object and PostgreSQL lets you grant permission directly to the database users, However, as a good practice, we recommend to create a role with specific set of permission based on access requirements. Then assign the role to each users. The roles should enforce a least privilege approach for accessing database objects.
+
+Here is a diagram for best practices on granting privilege on postgreSQL.
+
+![Alt Text](../.vuepress/public/managing-postgresql-users-1.gif)
+
+
+
 
 ## Cluster Configuration
 
@@ -134,3 +144,5 @@ Here are the concepts that we need to check to further accelerate the performanc
 [https://medium.com/we-build-state-of-the-art-software-creating/why-should-i-use-postgresql-as-database-in-my-startup-company-96de2fd375a9](https://medium.com/we-build-state-of-the-art-software-creating/why-should-i-use-postgresql-as-database-in-my-startup-company-96de2fd375a9)
 
 [https://www.postgresql.org/docs/current/warm-standby-failover.html](https://www.postgresql.org/docs/current/warm-standby-failover.html)
+
+[https://aws.amazon.com/blogs/database/managing-postgresql-users-and-roles/](https://aws.amazon.com/blogs/database/managing-postgresql-users-and-roles/)
