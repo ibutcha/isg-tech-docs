@@ -1,7 +1,9 @@
-# MongoDB v4.2
+###### MongoDB v4.2
+![Alt Text](../.vuepress/public/mongo-db-icon.png)
+
 *MongoDB is a general purpose, document-based, distributed database built for modern application developers and for the cloud era.*
 
-![Alt Text](../.vuepress/public/mongo-db-icon.png)
+
 
 
 [[toc]]

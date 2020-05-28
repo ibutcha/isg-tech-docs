@@ -33,7 +33,7 @@ module.exports = {
                 title: "Web Server",
                 collapsable: true,
                 children: [
-                    "/web-server/tomcat"
+                    "/web-server/nginx"
                 ]
             }],
             "/in-memory-database": [{
