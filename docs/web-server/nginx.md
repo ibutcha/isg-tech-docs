@@ -91,7 +91,7 @@ The Apache HTTP server and NGINX are the two most popular open source web server
  
 ### When Choose Apache over NGINX? 
 
- - Apache .htaccess 
+ - Apache .htaccess
  > NGINX does not support something like the Apache’s .htaccess file. However, with Apache, you get an advantage to give the non-privileged users control over some important aspects of their website.
  > - The users, obviously, are not permitted to edit the main configuration.
  > - Using .htaccess files, you can override system-wide settings on a per-directory basis.
