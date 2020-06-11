@@ -35,18 +35,8 @@ This architecture uses small, but more importantly, predictable amounts of memor
     - [HTTP authentication subrequests](https://nginx.org/en/docs/http/ngx_http_auth_request_module.html?_ga=2.72642714.863585722.1590649299-582712121.1590649299)
     - [IP address‑based access control lists](https://nginx.org/en/docs/http/ngx_http_access_module.html?_ga=2.126702724.863585722.1590649299-582712121.1590649299)
     - [Rate limiting](https://www.nginx.com/blog/rate-limiting-nginx/)
-    - Dual‑stack RSA/ECC SSL/TLS offload
     - TLS 1.3 support
-  - Monitoring - Diagnose and debug complex application architectures:
-    - AppDynamics, Datadog, Dynatrace plug‑ins
-  - Programmability - Dynamically deploy custom architectures:
-    - [NGINX JavaScript module](https://www.nginx.com/blog/introduction-nginscript/)
-  - Streaming media - Scalably deliver streaming media:
-    - Live streaming: RTMP, HLS, DASH
-    - VOD: Flash (flv), MP4
-  - Third-party ecosystem
-    - [Kubernetes Ingress controller](https://www.nginx.com/products/nginx/kubernetes-ingress-controller)
-    - OpenShift Router
+
     
 ## NGINX vs Apache
 The Apache HTTP server and NGINX are the two most popular open source web servers use to deliver web pages to a user's web browser
@@ -117,3 +107,4 @@ Nginx can then pass the final content to the client. Also, it allows you to have
  - [2016 Web Server Benchmarks performance](https://www.rootusers.com/linux-web-server-performance-benchmark-2016-results/)
  - [NGINX Performance & Scale](https://www.nginx.com/blog/inside-nginx-how-we-designed-for-performance-scale/)
  - [NGINX BLOG](https://www.aosabook.org/en/nginx.html)
+ - [NGINX CONFIGURATION VARIABLE](http://nginx.org/en/docs/varindex.html)
